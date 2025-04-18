@@ -1,0 +1,23 @@
+.side-menu-container{
+    width: 220px;
+    height: calc(100vh - 55px); /* Ocupará toda la altura disponible */
+    left: 0;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    &__menu-item{
+        color: white !important;
+    }
+
+    &__menu-icon{
+        margin-right: 10px;
+        size: 50;
+    }
+}
+
+.menu-icon {
+    margin-right: 8px; // Puedes ajustar el margen según necesites
+    vertical-align: middle; // Asegura que el ícono esté alineado con el texto
+}

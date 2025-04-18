@@ -1,0 +1,35 @@
+.admin-layout {
+    width: 100%;
+    background-color: #222;
+    background: #222;
+    height: 100vh; /* Para que ocupe toda la pantalla */
+    display: grid;
+
+    /* Definir filas y columnas */
+    grid-template-rows: 55px 1fr; /* Fila 1: 55px (header), Fila 2: el resto */
+    grid-template-columns: 220px 1fr; /* Columna 1: 200px (sidebar), Columna 2: el resto */
+
+    grid-template-areas: 
+        "menu menu"
+        "sidemenu content";
+
+    &__menu {
+        grid-area: menu;
+        background: #333;
+        color: white;
+        height: 55px; /* Asegurar que el header tenga su tamaño */
+    }
+
+    &__sidemenu { // ❌ Antes estaba mal referenciado como "side-menu"
+        grid-area: sidemenu;
+        background: #222;
+        color: white;
+        width: 200px; /* Garantizar el tamaño del sidebar */
+    }
+
+    &__main-content {
+        grid-area: content;
+        background: #000;
+        padding: 20px; /* Un poco de espacio interno */
+    }
+}

@@ -1,0 +1,11 @@
+// Aplica estilos globales a todos los inputs de Bootstrap en formularios
+.form-control {
+    background-color: #343a40 !important;
+    color: white !important;
+    border: 1px solid #495057 !important;
+    margin-bottom: 10px;
+  }
+  
+  .form-control::placeholder {
+    color: #adb5bd !important;
+  }

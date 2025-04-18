@@ -1,0 +1,22 @@
+# Archivos de entorno y variables sensibles
+.env
+
+# Archivos de compilación y dependencias
+__pycache__/
+*.py[cod]
+*.sqlite3
+node_modules/
+dist/
+build/
+
+# Archivos de Django
+*.log
+db.sqlite3
+/static/
+media/
+
+# Docker y volúmenes
+*.pid
+*.db
+*.tar
+postgres_data/

@@ -1,0 +1,22 @@
+.login-form-admin{
+    .btn.btn-primary{
+        margin-top: 20px;
+        width: 100%;
+        background-color: #0098d3;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .field {
+        background-color: #f1f1f1;
+        border-color: #f1f1f1;
+        margin-top: 10px;
+        border-radius: 10px !important;
+
+        &:focus{
+            background-color: #fff !important;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) !important;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) !important;
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2) !important;
+        }
+    }
+}

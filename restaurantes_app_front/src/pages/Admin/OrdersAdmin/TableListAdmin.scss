@@ -1,0 +1,75 @@
+.table-list-admin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        color: white;
+        text-decoration: none;
+
+        img {
+            width: 200px;
+            height: 200px;
+            filter: invert(1);
+        }
+
+        &.pending img {
+            filter: invert(27%) sepia(87%) saturate(5000%) hue-rotate(210deg) brightness(90%) contrast(100%);
+        }
+
+        &.busy img { // 🟠 Nueva clase para mesas ocupadas (naranja)
+            filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(-20deg) brightness(90%) contrast(100%);
+        }
+
+        &.payment img {
+            filter: invert(48%) sepia(94%) saturate(6000%) hue-rotate(90deg) brightness(90%) contrast(100%);
+        }        
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &__badge{
+        position: absolute;
+        top: 25%;
+    }
+
+}
+
+/*.table-list-admin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    &__image {
+        position: relative;
+        text-align: center;
+        color: white;
+
+        img {
+            width: 200px;
+            height: 200px;
+            filter: invert(1);
+        }
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        padding: 10px 10px;
+        right: 43%;
+        top: 25%;
+    }
+}*/
+
